@@ -26,6 +26,29 @@ public class Main {
         short shortVal = 7;
         long longVal = 5;
 
+        short result5 = byteVal;
+
+        /*
+        short result6 = longVal;
+        here, the compiler will get mad because you are trying to make a narrow conversion.
+         */
+
+        short result7 = (short) longVal;
+        System.out.println(result7);
+
+        /*
+        short result8 = byteVal - longVal;
+        here we have another instance of a long type tying to be assigned to a short type
+        */
+
+        short result8 = (short) longVal;
+        System.out.println(result8);
+
+        /*
+        long result9 = longVal - floatVal;
+        needs a long to be stored, but found a float
+        */
+
         System.out.println("Success");
     }
 }
