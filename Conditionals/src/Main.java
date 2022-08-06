@@ -25,5 +25,12 @@ public class Main {
                 break;
         }
         System.out.println(result);
+
+        int students = 150;
+        int rooms = 0;
+        //because we had the logical operator &&, the first part was false,
+        //so the rest of the equation was not evaluated.
+        if(rooms != 0 && students/rooms > 30)
+            System.out.print("Crowded");
     }
 }
