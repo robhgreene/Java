@@ -1,8 +1,8 @@
-package com.example.organizer;
+package com.example.organized;
 
 public class Main {
 
-    public statis void main(String[] args) {
+    public static void main(String[] args) {
         System.out.println("We got organized");
     }
 }
